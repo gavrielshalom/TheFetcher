@@ -1,0 +1,1 @@
+TheFetcher is a public website that can be used to create fake personas powered by "randomuser.me". It provides detailed information for other uses while also allowing developers to use the ID's of TheFetcher.
