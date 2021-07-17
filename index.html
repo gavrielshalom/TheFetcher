@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+    <script src="app.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -25,30 +27,30 @@
     </div>
     <form action="" class="text-center mt-5">
         <h3>Gender</h3>
-        <span><i class="fas fa-mars text-2xl text-blue-600 mr-2"></i><input type="radio" name="Male" id="">Male</span>
-        <span class="ml-3"><i class="fas fa-venus text-2xl text-pink-600 mr-2"></i><input type="radio" name="Male" id="">Female</span>
+        <span><i class="fas fa-mars text-2xl text-blue-600 mr-2"></i><input type="radio" name="gender" id="male" value="male">Male</span>
+        <span class="ml-3"><i class="fas fa-venus text-2xl text-pink-600 mr-2"></i><input type="radio" name="gender" value="female" id="female">Female</span>
     </form>
     <h3 class="text-center mt-5">Nationality</h3>
     <form action="" class="text-center mt-5">
-        <div><span class="inline-block"><input type="radio" name="country" id="">🇦🇺 Australia</span>
-        <span class="inline-block"><input type="radio" name="country" id=""/>🇧🇷 Brazil</span>
-        <span class="inline-block"><input type="radio" name="country" id=""/>🇨🇦 Canada</span>
-        <span class="inline-block"><input type="radio" name="country" id=""/>🇨🇭 Switzerland</span>
-        <span class="inline-block"><input type="radio" name="country" id=""/>🇩🇪 Germany</span></div>
-        <div><span class="inline-block"><input type="radio" name="country" id=""/>🇬🇧 UK</span>
-        <span class="inline-block"><input type="radio" name="country" id="">🇩🇰 Denmark</span>
-        <span class="inline-block"><input type="radio" name="country" id="">🇪🇸 Spain</span>
-        <span class="inline-block"><input type="radio" name="country" id="">🇫🇮 Finland</span>
-        <span class="inline-block"><input type="radio" name="country" id="">🇫🇷 France</span></div>
-        <span class="inline-block"><input type="radio" name="country" id="">🇮🇪 Ireland</span>
-        <span class="inline-block"><input type="radio" name="country" id="">🇮🇷 Iran</span>
-        <span class="inline-block"><input type="radio" name="country" id="">🇳🇴 Norway</span>
-        <span class="inline-block"><input type="radio" name="country" id="">🇳🇱 Netherlands</span>
-        <span class="inline-block"><input type="radio" name="country" id="">🇳🇿 New Zealand</span>
-        <span class="inline-block"><input type="radio" name="country" id="">🇹🇷 Turkey</span>
+        <div><span class="inline-block"><input type="radio" name="country" id="au" value="au">🇦🇺 Australia</span>
+        <span class="inline-block"><input type="radio" name="country" id="br" value="br"/>🇧🇷 Brazil</span>
+        <span class="inline-block"><input type="radio" name="country" id="ca" value="ca"/>🇨🇦 Canada</span>
+        <span class="inline-block"><input type="radio" name="country" id="ch" value="ch"/>🇨🇭 Switzerland</span>
+        <span class="inline-block"><input type="radio" name="country" id="de" value="de"/>🇩🇪 Germany</span></div>
+        <div><span class="inline-block"><input type="radio" name="country" id="gb" value="gb"/>🇬🇧 UK</span>
+        <span class="inline-block"><input type="radio" name="country" id="dk" value="dk">🇩🇰 Denmark</span>
+        <span class="inline-block"><input type="radio" name="country" id="es" value="es">🇪🇸 Spain</span>
+        <span class="inline-block"><input type="radio" name="country" id="fi" value="fi">🇫🇮 Finland</span>
+        <span class="inline-block"><input type="radio" name="country" id="fr" value="fr">🇫🇷 France</span></div>
+        <span class="inline-block"><input type="radio" name="country" id="ie" value="ie">🇮🇪 Ireland</span>
+        <span class="inline-block"><input type="radio" name="country" id="ir" value="ir">🇮🇷 Iran</span>
+        <span class="inline-block"><input type="radio" name="country" id="no" value="no">🇳🇴 Norway</span>
+        <span class="inline-block"><input type="radio" name="country" id="nl" value="nl">🇳🇱 Netherlands</span>
+        <span class="inline-block"><input type="radio" name="country" id="nz" value="nz">🇳🇿 New Zealand</span>
+        <span class="inline-block"><input type="radio" name="country" id="tr" value="tr">🇹🇷 Turkey</span>
         
     </form>    
-    <button href="#" class="transition duration-500 block active:bg-green-700 mt-10 p-2 text-center border-2 ">Generate</button>
+    <button id="button" onclick="buttonClick()" class="transition duration-500 block hover:bg-gray-300 mt-10 p-2 text-center border-2 ">Generate</button>
 
 
     
